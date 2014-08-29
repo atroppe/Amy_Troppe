@@ -1,0 +1,439 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 1.5s ease;
+}
+/**--------- GRIDS ------------**/
+
+.grid {
+    font-size: 0px;
+    text-align: justify;
+}
+/*the following is needed for justify to work*/
+
+.grid:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.cell {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+    font-size: 1rem;
+}
+/**--------- GRIDS ------------**/
+
+body {
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
+    background-repeat: repeat;
+    background-size: 130% auto;
+}
+.homepage {
+    /*background-color: black;*/
+    /*background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);*/
+    background-repeat: repeat;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 4px;
+    min-height: 100%;
+    /* for older browsers (ie7 and less) */
+    min-height: 100vh;
+    overflow: auto;
+}
+.header {
+    padding: 60px 60px 0px 60px;
+}
+.homepage .bars {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+}
+.homepage .barBox {
+    background-color: hsla(360, 100%, 100%, .3);
+    width: 3rem;
+    height: 3rem;
+}
+.homepage .logo {
+    display: inline-block;
+    vertical-align: bottom;
+    /*    padding: 50px 20px;*/
+    width: 30%;
+}
+.homepage nav {
+    display: inline-block;
+    vertical-align: bottom;
+    /*   padding: 50px 20px;*/
+    width: 70%;
+}
+.homepage nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+.homepage nav ul {
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-align: right;
+}
+.logo {
+    text-align: left;
+}
+.leaf, .logo h2 {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-size: 2rem;
+}
+h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.main {
+    padding: 120px 60px;
+}
+.right p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+.left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    /*    padding: 20px 20px;*/
+}
+.right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    text-align: center;
+    /*    padding: 20px 20px 20px 200px;*/
+    padding-left: 200px;
+}
+.bigLine {
+    width: 260px;
+    height: 30px;
+    background-color: white;
+}
+h1 {
+    color: white;
+}
+.high {
+    font-size: 10rem;
+    line-height: .8;
+    font-weight: 900;
+    letter-spacing: 12px;
+}
+.values {
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+/*////////////////////PAGE2//////////////////////////////////*/
+
+.page2 {
+    background-color: #E3E3E3;
+    font-size: 1rem;
+    text-align: center;
+    padding: 100px 0px;
+    overflow: auto;
+}
+.numbers {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+}
+h4 {
+    color: white;
+    font-size: 3rem;
+}
+.numbers .numberHeading {
+    margin: 0;
+    padding: 0;
+}
+.numbers .icons {
+    width: 175px;
+    height: 175px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #E0125E;
+    text-align: center;
+}
+.numbers .icons i {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    font-size: 4rem;
+}
+.numbers .circle {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.numbers h5 {
+    color: #922179;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.smallLine {
+    background-color: white;
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+}
+.numbers p, .numbers a, .numbers li {
+    color: #E0125E;
+    font-family: 'Antic Slab', serif;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding: 0px;
+    margin: 0px;
+}
+.numbers ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+/*/////////////////BAR///////////////////////*/
+
+.bar {
+    background-color: #1C1241;
+    min-height: 150px;
+    margin: 0;
+    position: relative;
+}
+.bar p {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 2rem;
+}
+.my-icon {
+    position: absolute;
+    width: 54px;
+    margin: 0 auto;
+    left: 50%;
+    bottom: 0px;
+    z-index: 2;
+    font-size: 1rem;
+    -webkit-transform: translateX(-50%);
+}
+.my-icon > i {
+    position: absolute;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 0;
+    border: 1.5em solid transparent;
+    border-top: 1.5em solid #1C1241;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #E3E3E3
+}
+/*/////////////////PAGE3///////////////////////*/
+
+.page3 {
+    overflow: auto;
+    position: relative;
+    background-color: #E3E3E3;
+    width: 100%;
+    display: block;
+    padding-top: 2rem;
+}
+.intro {
+    position: relative;
+    text-align: left;
+    /*    padding: 100px 40px;*/
+}
+.page3 .intro {
+    padding-left: 40%;
+}
+.intro h6 {
+    color: #252525;
+    font-size: 2.5rem;
+}
+.intro h7 {
+    color: #C2403C;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.intro p {
+    color: #252525;
+    font-family: 'Antic Slab', serif;
+    font-size: 1rem;
+}
+/*///////////////////PAGE4//////////////////////////////*/
+
+.page4 {
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: #E3E3E3;
+}
+.page4 .intro {
+    padding-right: 40%;
+}
+/******************FOOTER***********************/
+
+footer {
+    background-color: black;
+    background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
+    background-repeat: repeat;
+    color: white;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    padding: 80px;
+}
+.contact p {
+    text-align: right;
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+}
+.contact {
+    padding-left: 100px;
+}
+.network {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+footer .logo, .contact, .network {
+    display: inline-block;
+    vertical-align: center;
+}
+/****************MEDIA QUERIES***********************/
+
+@media (max-width: 400px) {
+    .homepage {
+        min-height: 0;
+    }
+    nav > ul, .homepage .logo h3, .bigLine, .smallLine, .numbers h4 {
+        display: none;
+    }
+    .header, .main {
+        padding: 15px 15px 0px 15px;
+    }
+    .homepage .logo {
+        width: 50%;
+        text-align: right;
+    }
+    .right {
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+    }
+    .high {
+        font-size: 5rem;
+    }
+    .values {
+        font-size: 3rem;
+    }
+    .right p {
+        font-size: .75rem;
+    }
+    .numbers {
+        width: 100%;
+        padding: 0;
+    }
+    .page2 {
+        padding: 20px 10px;
+    }
+    .icons {
+        -webkit-transform: scale(.5);
+    }
+    .numbers .circle {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .numbers h5 {
+        width: 70%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .page3 .intro, .page4 .intro {
+        padding: 40px 20px 0px 20px;
+    }
+    .intro h6 {
+        font-size: 2rem;
+    }
+    .page3, .page4 {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    footer .logo, footer h3, footer .contact p, footer .network {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    footer .contact {
+        padding: 20px 0px;
+    }
+    footer {
+        padding: 40px 20px;
+    }
+}
+@media (min-width: 400px) {
+    .homepage .bars {
+        display: none;
+    }
+    .homepage .barBox {
+        display: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+    .cell {
+        width: 50%;
+    }
+}
+/***************JS**************************/
+
+.popUp {
+    width: 550px;
+    height: 350px;
+    background-color: #1C1241;
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    z-index: 2;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
