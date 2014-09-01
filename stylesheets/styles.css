@@ -34,12 +34,12 @@ body {
     padding: 0;
     background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
     background-repeat: repeat;
-    background-size: 130% auto;
+    background-size: 200% auto;
 }
 .homepage {
     /*background-color: black;*/
     /*background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);*/
-    background-repeat: repeat;
+    /*    background-repeat: repeat;*/
     color: white;
     font-size: 1rem;
     font-weight: 100;
@@ -83,9 +83,13 @@ body {
 .homepage nav ul {
     margin: 0 auto;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 4px;
     text-align: right;
+}
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+    color: white;
+    text-decoration: none;
 }
 .logo {
     text-align: left;
@@ -103,7 +107,7 @@ h3 {
     letter-spacing: 4px;
 }
 .main {
-    padding: 120px 60px;
+    padding: 80px 80px;
 }
 .right p {
     color: white;
@@ -137,10 +141,11 @@ h1 {
     color: white;
 }
 .high {
-    font-size: 10rem;
+    font-size: 9rem;
     line-height: .8;
     font-weight: 900;
     letter-spacing: 12px;
+    /*    text-align: left;*/
 }
 .values {
     font-size: 6rem;
@@ -154,15 +159,16 @@ h1 {
     background-color: #E3E3E3;
     font-size: 1rem;
     text-align: center;
-    padding: 100px 0px;
+    padding: 100px 100px;
     overflow: auto;
+    min-height: 100vh;
 }
 .numbers {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    width: 20%;
-    padding: 10px;
+    width: 30%;
+    /*    padding: 10px;*/
 }
 h4 {
     color: white;
@@ -225,15 +231,14 @@ h4 {
 
 .bar {
     background-color: #1C1241;
-    min-height: 150px;
+    /*    min-height: 150px;*/
     margin: 0;
     position: relative;
 }
 .bar p {
     color: white;
     text-align: center;
-    position: relative;
-    top: 30%;
+    padding: 40px;
     font-size: 2rem;
 }
 .my-icon {
@@ -266,33 +271,77 @@ h4 {
     background-color: #E3E3E3;
     width: 100%;
     display: block;
-    padding-top: 2rem;
 }
 .intro {
-    position: relative;
+    /*    position: relative;*/
     text-align: left;
-    /*    padding: 100px 40px;*/
 }
-.page3 .intro {
-    padding-left: 40%;
+.intro, .desktop {
+    width: 45%;
 }
 .intro h6 {
-    color: #252525;
-    font-size: 2.5rem;
+    color: #1C1241;
+    font-size: 2rem;
 }
 .intro h7 {
-    color: #C2403C;
-    font-size: 1.5rem;
-    font-weight: bolder;
+    color: #BECF2C;
+    font-size: 1rem;
+    /*    font-weight: bolder;*/
 }
 .intro p {
-    color: #252525;
+    color: #1C1241;
     font-family: 'Antic Slab', serif;
     font-size: 1rem;
 }
+.projects {
+    padding: 50px;
+}
+.desktop {
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px #000;
+    background-color: darkgrey;
+    padding: 20px;
+}
+.screenshot {
+    width: 100%;
+}
+iframe {
+    width: 100%;
+}
+.codeLinks {
+    text-align: center;
+}
+.codeLinks a:link, .codeLinks a:visited, .codeLinks a:hover, .codeLinks a:active {
+    text-decoration: none;
+    border: 2px solid #3544A4;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+.codeLinks a:link, .codeLinks a:visited {
+    color: #3544A4;
+    background-color: white;
+}
+.codeLinks a:hover, .codeLinks a:active {
+    color: white;
+    background-color: #3544A4;
+}
+/*iframe {
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+    width: 1200;
+    height: 800px;
+    -webkit-transform: scale(0.4);
+}*/
+
 /*///////////////////PAGE4//////////////////////////////*/
 
-.page4 {
+/*.page4 {
     overflow: auto;
     position: relative;
     width: 100%;
@@ -301,13 +350,11 @@ h4 {
 }
 .page4 .intro {
     padding-right: 40%;
-}
+}*/
+
 /******************FOOTER***********************/
 
 footer {
-    background-color: black;
-    background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
-    background-repeat: repeat;
     color: white;
     display: block;
     width: 100%;
@@ -316,26 +363,32 @@ footer {
     text-transform: uppercase;
     padding: 80px;
 }
-.contact p {
+.contactinfo p {
     text-align: right;
-    font-size: 10px;
-    font-weight: 100;
+    font-size: .6rem;
+    font-weight: 900;
     letter-spacing: 4px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 15px;
 }
-.contact {
+/*.contactinfo {
     padding-left: 100px;
-}
+}*/
+
 .network {
     font-size: 3rem;
     margin: 0;
     padding: 0;
     line-height: 0;
 }
-footer .logo, .contact, .network {
-    display: inline-block;
-    vertical-align: center;
+.me, .contactinfo {
+    /*    display: inline-block;
+    vertical-align: top;*/
+    width: 50%;
+}
+.network a:link, .network a:visited, .network a:hover, .network a:active {
+    color: white;
+    text-decoration: none;
 }
 /****************MEDIA QUERIES***********************/
 
