@@ -35,6 +35,7 @@ body {
     background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
     background-repeat: repeat;
     background-size: 200% auto;
+    min-width: 300px;
 }
 .homepage {
     /*background-color: black;*/
@@ -140,14 +141,14 @@ h3 {
 h1 {
     color: white;
 }
-.high {
+.lineOne {
     font-size: 9rem;
     line-height: .8;
     font-weight: 900;
     letter-spacing: 12px;
     /*    text-align: left;*/
 }
-.values {
+.lineTwo {
     font-size: 6rem;
     font-weight: 900;
     letter-spacing: 10px;
@@ -302,9 +303,12 @@ h4 {
     box-shadow: 4px 4px 14px #000;
     background-color: darkgrey;
     padding: 20px;
+    overflow: auto;
+    height: 300px;
 }
 .screenshot {
     width: 100%;
+    overflow: auto;
 }
 iframe {
     width: 100%;
@@ -392,7 +396,7 @@ footer {
 }
 /****************MEDIA QUERIES***********************/
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .homepage {
         min-height: 0;
     }
@@ -474,6 +478,20 @@ footer {
     .cell {
         width: 50%;
     }
+.homepage nav ul {
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-align: right;
+}
+    .lineOne {
+    font-size: 6rem;
+}
+.lineTwo {
+    font-size: 4rem;
+}
+
 }
 /***************JS**************************/
 
