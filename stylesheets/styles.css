@@ -35,7 +35,7 @@ body {
     background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
     background-repeat: repeat;
     background-size: 200% auto;
-    min-width: 300px;
+    min-width: 400px;
 }
 .homepage {
     /*background-color: black;*/
@@ -53,46 +53,33 @@ body {
 .header {
     padding: 60px 60px 0px 60px;
 }
-.homepage .bars {
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    font-size: 2rem;
-    width: 50%;
-}
-.homepage .barBox {
-    background-color: hsla(360, 100%, 100%, .3);
-    width: 3rem;
-    height: 3rem;
-}
 .homepage .logo {
     display: inline-block;
     vertical-align: bottom;
-    /*    padding: 50px 20px;*/
-    width: 30%;
+    /*    width: 30%;*/
 }
 .homepage nav {
     display: inline-block;
     vertical-align: bottom;
-    /*   padding: 50px 20px;*/
-    width: 70%;
+    /*    width: 70%;*/
 }
-.homepage nav ul li {
+.homepage nav li {
     display: inline-block;
-    padding: 10px;
-}
-.homepage nav ul {
-    margin: 0 auto;
+    padding: 0px 10px;
     font-size: 15px;
     font-weight: 200;
     letter-spacing: 4px;
+    margin-bottom: 0.825rem;
+}
+.homepage nav ul {
+    margin: 0 auto;
     text-align: right;
 }
 nav a:link, nav a:visited, nav a:hover, nav a:active {
     color: white;
     text-decoration: none;
 }
-.logo {
+footer .logo {
     text-align: left;
 }
 .leaf, .logo h2 {
@@ -122,16 +109,13 @@ h3 {
 .left {
     display: inline-block;
     vertical-align: middle;
-    width: 30%;
-    /*    padding: 20px 20px;*/
+    /*    width: 30%;*/
 }
 .right {
     display: inline-block;
     vertical-align: middle;
-    width: 70%;
+    /*    width: 70%;*/
     text-align: center;
-    /*    padding: 20px 20px 20px 200px;*/
-    padding-left: 200px;
 }
 .bigLine {
     width: 260px;
@@ -204,7 +188,7 @@ h4 {
     font-weight: bolder;
     letter-spacing: 4px;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 0;
     width: 100%;
     text-align: center;
@@ -214,6 +198,7 @@ h4 {
     width: 80px;
     height: 5px;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 .numbers p, .numbers a, .numbers li {
     color: #E0125E;
@@ -277,7 +262,7 @@ h4 {
     /*    position: relative;*/
     text-align: left;
 }
-.intro, .desktop {
+.intro, .desktopContainer {
     width: 45%;
 }
 .intro h6 {
@@ -303,15 +288,13 @@ h4 {
     box-shadow: 4px 4px 14px #000;
     background-color: darkgrey;
     padding: 20px;
-    overflow: auto;
-    height: 300px;
 }
 .screenshot {
     width: 100%;
-    overflow: auto;
 }
-iframe {
-    width: 100%;
+.imgContainer {
+    height: 300px;
+    overflow: auto;
 }
 .codeLinks {
     text-align: center;
@@ -367,7 +350,7 @@ footer {
     text-transform: uppercase;
     padding: 80px;
 }
-.contactinfo p {
+.contactInfo p {
     text-align: right;
     font-size: .6rem;
     font-weight: 900;
@@ -396,115 +379,122 @@ footer {
 }
 /****************MEDIA QUERIES***********************/
 
-@media (max-width: 600px) {
-    .homepage {
-        min-height: 0;
+@media (min-width: 940px) and (max-width: 1140px) {
+    .homepage nav li {
+        font-size: 10px;
+        padding: 0px 5px;
     }
-    nav > ul, .homepage .logo h3, .bigLine, .smallLine, .numbers h4 {
+    .logo h3 {
+        font-size: 13px;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+    .imgContainer {
+        height: 200px;
+        overflow: auto;
+    }
+}
+/**************************************************/
+
+@media (min-width: 400px) and (max-width: 939px) {
+    nav {
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+    .homepage nav ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .homepage nav li {
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+    .logo h3 {
+        font-size: 13px;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+    .imgContainer {
+        height: 200px;
+        overflow: auto;
+    }
+    .left, .smallLine, .numbers h4 {
         display: none;
     }
-    .header, .main {
-        padding: 15px 15px 0px 15px;
-    }
-    .homepage .logo {
-        width: 50%;
-        text-align: right;
-    }
-    .right {
-        width: 100%;
+    .header, .main, .homepage .logo {
         text-align: center;
-        padding: 40px;
-    }
-    .high {
-        font-size: 5rem;
-    }
-    .values {
-        font-size: 3rem;
-    }
-    .right p {
-        font-size: .75rem;
     }
     .numbers {
         width: 100%;
         padding: 0;
     }
-    .page2 {
-        padding: 20px 10px;
+    .icons {
+        -webkit-transform: scale(.8);
+    }
+    .numbers .circle, .numbers h5 {
+        width: 50%;
+        vertical-align: middle;
+    }
+    .numberHeading {
+        text-align: center;
+    }
+    .desktopContainer, .intro {
+        width: 100%;
+    }
+    .projects {
+        padding: 50px;
+    }
+    .desktopContainer {
+        padding: 50px;
+    }
+    .me, .contactInfo {
+        width: 100%;
+        text-align: center;
+    }
+    footer .logo, footer .contactInfo p {
+        text-align: center;
+    }
+}
+@media (min-width: 400px) and (max-width: 599px) {
+    .lineOne {
+        font-size: 6rem;
+    }
+    .lineTwo {
+        font-size: 4rem;
+    }
+    .right p {
+        font-size: .75rem;
     }
     .icons {
         -webkit-transform: scale(.5);
     }
-    .numbers .circle {
-        width: 30%;
-        display: inline-block;
-        vertical-align: middle;
+    .homepage nav li {
+        font-size: 10px;
+        padding: 0px 0px;
     }
-    .numbers h5 {
-        width: 70%;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .page3 .intro, .page4 .intro {
-        padding: 40px 20px 0px 20px;
-    }
-    .intro h6 {
-        font-size: 2rem;
-    }
-    .page3, .page4 {
-        padding-top: 20px;
-        padding-bottom: 0px;
-    }
-    footer .logo, footer h3, footer .contact p, footer .network {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-    footer .contact {
-        padding: 20px 0px;
-    }
-    footer {
-        padding: 40px 20px;
-    }
-}
-@media (min-width: 400px) {
-    .homepage .bars {
+    li .home {
         display: none;
     }
-    .homepage .barBox {
+    .main {
+        padding: 80px 10px;
+    }
+    .page2 {
+        padding: 10px 10px;
+        padding-bottom: 50px;
+    }
+    .projects {
+        padding: 20px;
+    }
+    .bar p {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .my-icon {
         display: none;
     }
 }
-@media (min-width: 600px) and (max-width: 1000px) {
-    .cell {
-        width: 50%;
-    }
-.homepage nav ul {
-    margin: 0 auto;
-    font-size: 10px;
-    font-weight: 200;
-    letter-spacing: 4px;
-    text-align: right;
-}
-    .lineOne {
-    font-size: 6rem;
-}
-.lineTwo {
-    font-size: 4rem;
-}
-
-}
-/***************JS**************************/
-
-.popUp {
-    width: 550px;
-    height: 350px;
-    background-color: #1C1241;
-    position: fixed;
-    top: 200px;
-    left: 50px;
-    z-index: 2;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 50px;
-}
+/***************************************************/
