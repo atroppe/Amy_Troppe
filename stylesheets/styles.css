@@ -184,7 +184,7 @@ h4 {
     padding: 0;
 }
 .numbers h5 {
-    color: #922179;
+    color: #FD9B32;
     font-weight: bolder;
     letter-spacing: 4px;
     font-size: 1.5rem;
@@ -295,6 +295,20 @@ h4 {
 .imgContainer {
     height: 300px;
     overflow: auto;
+}
+.menuScreens {
+	background-image: url(http://cl.ly/image/201v2C1I203J/computersNmenu3.png);
+	background-size: 100% auto;
+	background-position: center;
+	height: 458px;
+	background-repeat: no-repeat;
+}
+.houseScreens {
+	background-image: url(http://cl.ly/image/3V1p0o0g2h0G/computersNhouse.png);
+	background-size: 100% auto;
+	background-position: center;
+	height: 358px;
+	background-repeat: no-repeat;
 }
 .codeLinks {
     text-align: center;
@@ -449,7 +463,7 @@ footer {
         padding: 50px;
     }
     .desktopContainer {
-        padding: 50px;
+/*        padding: 50px;*/
     }
     .me, .contactInfo {
         width: 100%;
