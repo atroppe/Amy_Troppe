@@ -2,7 +2,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all 1.5s ease;
+    -webkit-transition: background-color 1.5s ease;
 }
 /**--------- GRIDS ------------**/
 
@@ -10,8 +10,6 @@
     font-size: 0px;
     text-align: justify;
 }
-/*the following is needed for justify to work*/
-
 .grid:after {
     content: '';
     display: inline-block;
@@ -34,13 +32,10 @@ body {
     padding: 0;
     background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
     background-repeat: repeat;
-    background-size: 200% auto;
+    background-size: 100% auto;
     min-width: 400px;
 }
 .homepage {
-    /*background-color: black;*/
-    /*background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);*/
-    /*    background-repeat: repeat;*/
     color: white;
     font-size: 1rem;
     font-weight: 100;
@@ -79,6 +74,9 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     color: white;
     text-decoration: none;
 }
+/*nav a {
+    -webkit-transition: all 1.5s ease;
+}*/
 footer .logo {
     text-align: left;
 }
@@ -121,6 +119,10 @@ h3 {
     width: 260px;
     height: 30px;
     background-color: white;
+    -webkit-transition: all 1.5s ease;
+}
+.bigLine:hover {
+    -webkit-transform: translateX(100%);
 }
 h1 {
     color: white;
@@ -297,18 +299,18 @@ h4 {
     overflow: auto;
 }
 .menuScreens {
-	background-image: url(http://cl.ly/image/201v2C1I203J/computersNmenu3.png);
-	background-size: 100% auto;
-	background-position: center;
-	height: 458px;
-	background-repeat: no-repeat;
+    background-image: url(http://cl.ly/image/201v2C1I203J/computersNmenu3.png);
+    background-size: 100% auto;
+    background-position: center;
+    height: 458px;
+    background-repeat: no-repeat;
 }
 .houseScreens {
-	background-image: url(http://cl.ly/image/3V1p0o0g2h0G/computersNhouse.png);
-	background-size: 100% auto;
-	background-position: center;
-	height: 358px;
-	background-repeat: no-repeat;
+    background-image: url(http://cl.ly/image/3V1p0o0g2h0G/computersNhouse.png);
+    background-size: 100% auto;
+    background-position: center;
+    height: 358px;
+    background-repeat: no-repeat;
 }
 .codeLinks {
     text-align: center;
@@ -320,7 +322,7 @@ h4 {
     font-family: 'Cabin', sans-serif;
     font-size: 1rem;
     padding: 0 1rem;
-    margin: 0 1rem;
+    margin: .5rem;
     text-transform: uppercase;
 }
 .codeLinks a:link, .codeLinks a:visited {
@@ -387,7 +389,7 @@ footer {
     vertical-align: top;*/
     width: 50%;
 }
-.network a:link, .network a:visited, .network a:hover, .network a:active {
+footer a:link, footer a:visited, footer a:hover, footer a:active {
     color: white;
     text-decoration: none;
 }
@@ -415,7 +417,9 @@ footer {
     nav {
         position: absolute;
         top: 10px;
-        left: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        width: 100%;
     }
     .homepage nav ul {
         text-align: center;
@@ -457,13 +461,13 @@ footer {
         text-align: center;
     }
     .desktopContainer, .intro {
-        width: 100%;
+        width: 80%;
     }
     .projects {
         padding: 50px;
     }
     .desktopContainer {
-/*        padding: 50px;*/
+        /*        padding: 50px;*/
     }
     .me, .contactInfo {
         width: 100%;
@@ -509,6 +513,9 @@ footer {
     }
     .my-icon {
         display: none;
+    }
+    .numbers h5 {
+        font-size: 1.4rem;
     }
 }
 /***************************************************/
