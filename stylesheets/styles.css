@@ -1,8 +1,6 @@
 *, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: background-color 1.5s ease;
+    transition: background-color 1.5s ease;
 }
 /**--------- GRIDS ------------**/
 
@@ -77,6 +75,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 /*nav a {
     -webkit-transition: all 1.5s ease;
 }*/
+
 footer .logo {
     text-align: left;
 }
@@ -177,7 +176,7 @@ h4 {
 .numbers .icons i {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     font-size: 4rem;
 }
 .numbers .circle {
@@ -237,7 +236,7 @@ h4 {
     bottom: 0px;
     z-index: 2;
     font-size: 1rem;
-    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .my-icon > i {
     position: absolute;
@@ -418,7 +417,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         position: absolute;
         top: 10px;
         left: 50%;
-        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
         width: 100%;
     }
     .homepage nav ul {
@@ -451,7 +450,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         padding: 0;
     }
     .icons {
-        -webkit-transform: scale(.8);
+        transform: scale(.8);
     }
     .numbers .circle, .numbers h5 {
         width: 50%;
@@ -488,7 +487,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         font-size: .75rem;
     }
     .icons {
-        -webkit-transform: scale(.5);
+        transform: scale(.5);
     }
     .homepage nav li {
         font-size: 10px;
