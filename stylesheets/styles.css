@@ -118,10 +118,10 @@ h3 {
     width: 260px;
     height: 30px;
     background-color: white;
-    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
 }
 .bigLine:hover {
-    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
 }
 h1 {
     color: white;
