@@ -51,12 +51,12 @@ body {
     vertical-align: bottom;
     /*    width: 30%;*/
 }
-.homepage nav {
+nav {
     display: inline-block;
     vertical-align: bottom;
     /*    width: 70%;*/
 }
-.homepage nav li {
+nav li {
     display: inline-block;
     padding: 0px 10px;
     font-size: 15px;
@@ -64,7 +64,7 @@ body {
     letter-spacing: 4px;
     margin-bottom: 0.825rem;
 }
-.homepage nav ul {
+nav ul {
     margin: 0 auto;
     text-align: right;
 }
@@ -395,7 +395,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 /****************MEDIA QUERIES***********************/
 
 @media (min-width: 940px) and (max-width: 1140px) {
-    .homepage nav li {
+    nav li {
         font-size: 10px;
         padding: 0px 5px;
     }
@@ -420,12 +420,12 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         transform: translateX(-50%);
         width: 100%;
     }
-    .homepage nav ul {
+    nav ul {
         text-align: center;
         margin: 0;
         padding: 0;
     }
-    .homepage nav li {
+    nav li {
         font-size: 10px;
         padding: 0px 5px;
     }
@@ -489,7 +489,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     .icons {
         transform: scale(.5);
     }
-    .homepage nav li {
+    nav li {
         font-size: 10px;
         padding: 0px 0px;
     }
@@ -517,4 +517,76 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         font-size: 1.4rem;
     }
 }
-/***************************************************/
+/********************resume.html**************************/
+
+.resumeHeader {
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 4px;
+    /*    overflow: auto;*/
+    /*    background-image: url("../images/coloredlights.jpg");*/
+    /*    background-size: 100% auto;*/
+    padding: 60px 60px 60px 60px;
+    background-color: #1C1241;
+}
+.resumeHeader .logo {
+    display: inline-block;
+    vertical-align: bottom;
+    /*    width: 30%;*/
+}
+.resumeMain {
+    background-color: #E3E3E3;
+    /*    text-align: center;*/
+    padding: 100px 100px;
+    overflow: auto;
+    min-height: 100vh;
+}
+.resumeFooter {
+    background-color: #1C1241;
+    /*    font-family: 'Cabin', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 4px;*/
+}
+.section {
+    width: 30%;
+    font-size: 2rem;
+    font-family: 'Cabin', sans-serif;
+    color: #3544A4;
+    background-color: #BECF2C;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.content p {
+    font-size: 1rem;
+    /*    color: #E0125E;*/
+    font-family: 'Antic Slab', serif;
+    text-indent: 0;
+    color: #1C1241;
+}
+.content {
+    width: 60%;
+}
+.content span {
+    text-transform: uppercase;
+    background-color: #BECF2C;
+    color: #3544A4;
+    padding: .5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.resumeFooter a:hover, .resumeFooter a:active, .resumeHeader nav a:hover, .resumeHeader nav a:active {
+    color: #FD9B32;
+    transition: all .5s ease;
+}
+.position {
+    margin-bottom: 1rem;
+}
+.position p:nth-child(1) {
+    margin-bottom: 2rem;
+}

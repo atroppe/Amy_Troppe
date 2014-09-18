@@ -3,6 +3,9 @@ window.onload = app;
 function app() {
     console.log("app is working");
 
+    $('.homepage').css("backgroundColor", '#1C1241');
+    
+
     var homepage = document.querySelector('.homepage');
     var github = document.querySelector('.github');
     var home = document.querySelector('.home');
@@ -21,8 +24,10 @@ function app() {
     resume.addEventListener('mouseover', changeColor('#BECF2C'));
     contact.addEventListener('mouseover', changeColor('#FD9B32'));
     logo.addEventListener('mouseover', reset());
+    logo.addEventListener('mouseout', function() {
+        $('.homepage').css("backgroundColor", '#1C1241');
+    });
 
-    $("body").on("click", home, reset());
 
     function changeColor(color) {
         return function() {
