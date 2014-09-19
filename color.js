@@ -3,10 +3,10 @@ window.onload = app;
 function app() {
     console.log("app is working");
 
-    $('.homepage').css("backgroundColor", '#1C1241');
+    $('.cameleon').css("backgroundColor", '#3544A4');
     
 
-    var homepage = document.querySelector('.homepage');
+    var cameleon = document.querySelector('.cameleon');
     var github = document.querySelector('.github');
     var home = document.querySelector('.home');
     var about = document.querySelector('.about');
@@ -25,19 +25,19 @@ function app() {
     contact.addEventListener('mouseover', changeColor('#FD9B32'));
     logo.addEventListener('mouseover', reset());
     logo.addEventListener('mouseout', function() {
-        $('.homepage').css("backgroundColor", '#1C1241');
+        $('.cameleon').css("backgroundColor", '#3544A4');
     });
 
 
     function changeColor(color) {
         return function() {
-            homepage.style.backgroundColor = color;
+            cameleon.style.backgroundColor = color;
         }
     }
 
     function reset() {
         return function() {
-            homepage.style.backgroundColor = "transparent";
+            cameleon.style.backgroundColor = "transparent";
         }
     }
 

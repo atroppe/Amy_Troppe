@@ -392,131 +392,6 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     color: white;
     text-decoration: none;
 }
-/****************MEDIA QUERIES***********************/
-
-@media (min-width: 940px) and (max-width: 1140px) {
-    nav li {
-        font-size: 10px;
-        padding: 0px 5px;
-    }
-    .logo h3 {
-        font-size: 13px;
-    }
-    .logo h2 {
-        font-size: 1.5rem;
-    }
-    .imgContainer {
-        height: 200px;
-        overflow: auto;
-    }
-}
-/**************************************************/
-
-@media (min-width: 400px) and (max-width: 939px) {
-    nav {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-    }
-    nav ul {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-    nav li {
-        font-size: 10px;
-        padding: 0px 5px;
-    }
-    .logo h3 {
-        font-size: 13px;
-    }
-    .logo h2 {
-        font-size: 1.5rem;
-    }
-    .imgContainer {
-        height: 200px;
-        overflow: auto;
-    }
-    .left, .smallLine, .numbers h4 {
-        display: none;
-    }
-    .header, .main, .homepage .logo {
-        text-align: center;
-    }
-    .numbers {
-        width: 100%;
-        padding: 0;
-    }
-    .icons {
-        transform: scale(.8);
-    }
-    .numbers .circle, .numbers h5 {
-        width: 50%;
-        vertical-align: middle;
-    }
-    .numberHeading {
-        text-align: center;
-    }
-    .desktopContainer, .intro {
-        width: 80%;
-    }
-    .projects {
-        padding: 50px;
-    }
-    .desktopContainer {
-        /*        padding: 50px;*/
-    }
-    .me, .contactInfo {
-        width: 100%;
-        text-align: center;
-    }
-    footer .logo, footer .contactInfo p {
-        text-align: center;
-    }
-}
-@media (min-width: 400px) and (max-width: 599px) {
-    .lineOne {
-        font-size: 6rem;
-    }
-    .lineTwo {
-        font-size: 4rem;
-    }
-    .right p {
-        font-size: .75rem;
-    }
-    .icons {
-        transform: scale(.5);
-    }
-    nav li {
-        font-size: 10px;
-        padding: 0px 0px;
-    }
-    li .home {
-        display: none;
-    }
-    .main {
-        padding: 80px 10px;
-    }
-    .page2 {
-        padding: 10px 10px;
-        padding-bottom: 50px;
-    }
-    .projects {
-        padding: 20px;
-    }
-    .bar p {
-        padding: 20px;
-        font-size: 1.5rem;
-    }
-    .my-icon {
-        display: none;
-    }
-    .numbers h5 {
-        font-size: 1.4rem;
-    }
-}
 /********************resume.html**************************/
 
 .resumeHeader {
@@ -590,3 +465,142 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 .position p:nth-child(1) {
     margin-bottom: 2rem;
 }
+/****************MEDIA QUERIES***********************/
+
+@media (min-width: 940px) and (max-width: 1140px) {
+    nav li {
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+    .logo h3 {
+        font-size: 13px;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+    .imgContainer {
+        height: 200px;
+        overflow: auto;
+    }
+    .section {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+}
+/**************************************************/
+
+@media (min-width: 400px) and (max-width: 939px) {
+    nav {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    nav ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+    .logo h3 {
+        font-size: 13px;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+    .imgContainer {
+        height: 200px;
+        overflow: auto;
+    }
+    .left, .smallLine, .numbers h4 {
+        display: none;
+    }
+    .header, .main, .homepage .logo, .resumeHeader, .resumeHeader .logo {
+        text-align: center;
+    }
+    .numbers {
+        width: 100%;
+        padding: 0;
+    }
+    .icons {
+        transform: scale(.8);
+    }
+    .numbers .circle, .numbers h5 {
+        width: 50%;
+        vertical-align: middle;
+    }
+    .numberHeading {
+        text-align: center;
+    }
+    .desktopContainer, .intro {
+        width: 80%;
+    }
+    .projects {
+        padding: 50px;
+    }
+    .desktopContainer {
+        /*        padding: 50px;*/
+    }
+    .me, .contactInfo {
+        width: 100%;
+        text-align: center;
+    }
+    footer .logo, footer .contactInfo p {
+        text-align: center;
+    }
+    .section {
+        font-size: 1.5rem;
+        padding: .5rem;
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+}
+@media (min-width: 400px) and (max-width: 599px) {
+    .lineOne {
+        font-size: 6rem;
+    }
+    .lineTwo {
+        font-size: 4rem;
+    }
+    .right p {
+        font-size: .75rem;
+    }
+    .icons {
+        transform: scale(.5);
+    }
+    nav li {
+        font-size: 10px;
+        padding: 0px 0px;
+    }
+    li .home {
+        display: none;
+    }
+    .main {
+        padding: 80px 10px;
+    }
+    .page2 {
+        padding: 10px 10px;
+        padding-bottom: 50px;
+    }
+    .projects {
+        padding: 20px;
+    }
+    .bar p {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .my-icon {
+        display: none;
+    }
+    .numbers h5 {
+        font-size: 1.4rem;
+    }
+}
+
