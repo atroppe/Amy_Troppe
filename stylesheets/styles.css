@@ -46,16 +46,6 @@ body {
 .header {
     padding: 60px 60px 0px 60px;
 }
-.homepage .logo {
-    display: inline-block;
-    vertical-align: bottom;
-    /*    width: 30%;*/
-}
-nav {
-    display: inline-block;
-    vertical-align: bottom;
-    /*    width: 70%;*/
-}
 nav li {
     display: inline-block;
     padding: 0px 10px;
@@ -79,11 +69,47 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 footer .logo {
     text-align: left;
 }
-.leaf, .logo h2 {
+.leaf, .logo, nav, .name {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
+    /*    min-height: 175px;*/
+}
+.logo {
+    text-align: left;
+    /*    width: 30%;*/
+}
+/*nav {
+    width: 70%;
+}*/
+
+.logo h2 {
     color: white;
     font-size: 2rem;
+}
+.more {
+    background-color: #1C1241;
+    padding: 80px 120px;
+}
+.AT {
+    background-image: url("../images/ATlogo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 267px;
+}
+.leaf {
+    width: 30%;
+}
+.more p {
+    width: 70%;
+    text-align: left;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Antic Slab', serif;
+}
+.more p, .AT {
+    vertical-align: middle;
 }
 h3 {
     color: white;
@@ -106,12 +132,12 @@ h3 {
 .left {
     display: inline-block;
     vertical-align: middle;
-    /*    width: 30%;*/
+    width: 30%;
 }
 .right {
     display: inline-block;
     vertical-align: middle;
-    /*    width: 70%;*/
+    width: 70%;
     text-align: center;
 }
 .bigLine {
@@ -127,18 +153,21 @@ h1 {
     color: white;
 }
 .lineOne {
-    font-size: 9rem;
+    font-size: 7rem;
     line-height: .8;
     font-weight: 900;
     letter-spacing: 12px;
-    /*    text-align: left;*/
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
 }
-.lineTwo {
+/*.lineTwo {
     font-size: 6rem;
     font-weight: 900;
     letter-spacing: 10px;
     margin-bottom: 20px;
-}
+}*/
+
 /*////////////////////PAGE2//////////////////////////////////*/
 
 .page2 {
@@ -148,6 +177,7 @@ h1 {
     padding: 100px 100px;
     overflow: auto;
     min-height: 100vh;
+    margin: 0;
 }
 .numbers {
     display: inline-block;
@@ -203,7 +233,7 @@ h4 {
 }
 .numbers p, .numbers a, .numbers li {
     color: #E0125E;
-    font-family: 'Antic Slab', serif;
+    font-family: 'Cabin', serif;
     font-size: 1rem;
     padding-top: 1rem;
     padding: 0px;
@@ -222,11 +252,12 @@ h4 {
     margin: 0;
     position: relative;
 }
-.bar p {
+.bar h4 {
     color: white;
     text-align: center;
     padding: 40px;
     font-size: 2rem;
+    font-family: 'Cabin', serif;
 }
 .my-icon {
     position: absolute;
@@ -486,7 +517,9 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         font-size: 1.5rem;
         padding: .5rem;
     }
-
+    .lineOne {
+        font-size: 5rem;
+    }
 }
 /**************************************************/
 
@@ -561,6 +594,12 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     .content {
         width: 100%;
     }
+    .lineOne {
+        font-size: 3rem;
+    }
+    .main {
+        padding: 10px 10px;
+    }
 }
 @media (min-width: 400px) and (max-width: 599px) {
     .lineOne {
@@ -583,7 +622,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         display: none;
     }
     .main {
-        padding: 80px 10px;
+        padding: 10px 7px;
     }
     .page2 {
         padding: 10px 10px;
@@ -602,5 +641,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     .numbers h5 {
         font-size: 1.4rem;
     }
+    .lineOne {
+        font-size: 2rem;
+    }
 }
-
