@@ -88,7 +88,7 @@ footer .logo {
 }
 .more {
     background-color: #1C1241;
-    padding: 80px 120px;
+    padding: 80px 150px;
 }
 .AT {
     background-image: url("../images/ATlogo.png");
@@ -104,9 +104,16 @@ footer .logo {
     width: 70%;
     text-align: left;
     color: white;
-    text-align: center;
     font-size: 1rem;
     font-family: 'Antic Slab', serif;
+}
+.more h4 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 .more p, .AT {
     vertical-align: middle;

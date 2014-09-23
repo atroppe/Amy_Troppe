@@ -4,9 +4,9 @@ function app() {
     console.log("app is working");
 
     $('.cameleon').css("backgroundColor", '#3544A4');
-    $('.lineOne').fadeOut(750, function() {
-        $(this).html('vision').fadeIn(750);
-    });
+    // $('.lineOne').fadeOut(750, function() {
+    //     $(this).html('vision').fadeIn(750);
+    // });
 
     var cameleon = document.querySelector('.cameleon');
     var github = document.querySelector('.github');
