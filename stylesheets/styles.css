@@ -306,12 +306,12 @@ h4 {
 }
 .intro h6 {
     color: #1C1241;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 .intro h7 {
     color: #BECF2C;
-    font-size: 1rem;
-    /*    font-weight: bolder;*/
+    font-size: 1.2rem;
 }
 .intro p {
     color: #1C1241;
@@ -344,6 +344,13 @@ h4 {
 }
 .houseScreens {
     background-image: url(http://cl.ly/image/3V1p0o0g2h0G/computersNhouse.png);
+    background-size: 100% auto;
+    background-position: center;
+    height: 358px;
+    background-repeat: no-repeat;
+}
+.etsyScreens {
+    background-image: url("../images/etsy-macbook.png");
     background-size: 100% auto;
     background-position: center;
     height: 358px;
