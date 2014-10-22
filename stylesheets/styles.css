@@ -40,6 +40,7 @@ body {
     letter-spacing: 4px;
     min-height: 100%;
     /* for older browsers (ie7 and less) */
+    
     min-height: 100vh;
     overflow: auto;
 }
@@ -53,6 +54,25 @@ nav li {
     font-weight: 200;
     letter-spacing: 4px;
     margin-bottom: 0.825rem;
+}
+.goal {
+    text-align: left;
+    padding-top: 3rem;
+}
+.goal li {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    margin: auto auto .5em;
+}
+.goal p {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: white;
+    margin: auto auto .75em;
+}
+.goal ul {
+    padding-left: 3em;
 }
 nav ul {
     margin: 0 auto;
@@ -152,6 +172,7 @@ h3 {
     height: 30px;
     background-color: white;
     transition: all 1.5s ease;
+    margin: 0 auto;
 }
 .bigLine:hover {
     transform: translateX(100%);
@@ -174,7 +195,6 @@ h1 {
     letter-spacing: 10px;
     margin-bottom: 20px;
 }*/
-
 /*////////////////////PAGE2//////////////////////////////////*/
 
 .page2 {
@@ -190,7 +210,7 @@ h1 {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    width: 30%;
+    width: 24%;
     /*    padding: 10px;*/
 }
 h4 {
@@ -207,7 +227,7 @@ h4 {
     background-color: white;
     border-radius: 50%;
     margin: 0 auto;
-    color: #E0125E;
+    color: #BECF2C;
     text-align: center;
 }
 .numbers .icons i {
@@ -222,7 +242,7 @@ h4 {
     padding: 0;
 }
 .numbers h5 {
-    color: #FD9B32;
+    color: #1C1241;
     font-weight: bolder;
     letter-spacing: 4px;
     font-size: 1.5rem;
@@ -239,7 +259,7 @@ h4 {
     margin-bottom: 1rem;
 }
 .numbers p, .numbers a, .numbers li {
-    color: #E0125E;
+    color: #3544A4;
     font-family: 'Cabin', serif;
     font-size: 1rem;
     padding-top: 1rem;
@@ -256,6 +276,7 @@ h4 {
 .bar {
     background-color: #1C1241;
     /*    min-height: 150px;*/
+    
     margin: 0;
     position: relative;
 }
@@ -299,6 +320,7 @@ h4 {
 }
 .intro {
     /*    position: relative;*/
+    
     text-align: left;
 }
 .intro, .desktopContainer {
@@ -310,7 +332,8 @@ h4 {
     text-transform: uppercase;
 }
 .intro h7 {
-    color: #BECF2C;
+/*    color: #BECF2C;*/
+    color: #3544A4;
     font-size: 1.2rem;
 }
 .intro p {
@@ -370,12 +393,12 @@ h4 {
     text-transform: uppercase;
 }
 .codeLinks a:link, .codeLinks a:visited {
-    color: #3544A4;
+    color: #BECF2C;
     background-color: white;
 }
 .codeLinks a:hover, .codeLinks a:active {
     color: white;
-    background-color: #3544A4;
+    background-color: #BECF2C;
 }
 /*iframe {
     margin: 0;
@@ -385,9 +408,7 @@ h4 {
     height: 800px;
     -webkit-transform: scale(0.4);
 }*/
-
 /*///////////////////PAGE4//////////////////////////////*/
-
 /*.page4 {
     overflow: auto;
     position: relative;
@@ -398,7 +419,6 @@ h4 {
 .page4 .intro {
     padding-right: 40%;
 }*/
-
 /******************FOOTER***********************/
 
 footer {
@@ -431,6 +451,7 @@ footer {
 .me, .contactinfo {
     /*    display: inline-block;
     vertical-align: top;*/
+    
     width: 50%;
 }
 footer a:link, footer a:visited, footer a:hover, footer a:active {
@@ -448,6 +469,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     /*    overflow: auto;*/
     /*    background-image: url("../images/coloredlights.jpg");*/
     /*    background-size: 100% auto;*/
+    
     padding: 60px 60px 60px 60px;
     background-color: #1C1241;
 }
@@ -459,6 +481,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 .resumeMain {
     background-color: #E3E3E3;
     /*    text-align: center;*/
+    
     padding: 100px 100px;
     overflow: auto;
     min-height: 100vh;
@@ -485,6 +508,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 .content p {
     font-size: 1rem;
     /*    color: #E0125E;*/
+    
     font-family: 'Antic Slab', serif;
     text-indent: 0;
     color: #1C1241;
