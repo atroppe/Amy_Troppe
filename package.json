@@ -15,5 +15,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atroppe/Amy_Troppe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atroppe/Amy_Troppe/issues"
+  },
+  "homepage": "https://github.com/atroppe/Amy_Troppe"
 }

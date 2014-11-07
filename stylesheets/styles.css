@@ -199,9 +199,10 @@ h1 {
 
 .page2 {
     background-color: #E3E3E3;
-    font-size: 1rem;
+    /*    font-size: 1rem;*/
+    
     text-align: center;
-    padding: 100px 100px;
+    padding: 7% 7%;
     overflow: auto;
     min-height: 100vh;
     margin: 0;
@@ -245,7 +246,7 @@ h4 {
     color: #1C1241;
     font-weight: bolder;
     letter-spacing: 4px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 1rem 0;
     margin: 0;
     width: 100%;
@@ -332,7 +333,8 @@ h4 {
     text-transform: uppercase;
 }
 .intro h7 {
-/*    color: #BECF2C;*/
+    /*    color: #BECF2C;*/
+    
     color: #3544A4;
     font-size: 1.2rem;
 }
@@ -594,15 +596,10 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     .header, .main, .homepage .logo, .resumeHeader, .resumeHeader .logo {
         text-align: center;
     }
-    .numbers {
-        width: 100%;
-        padding: 0;
-    }
     .icons {
         transform: scale(.8);
     }
     .numbers .circle, .numbers h5 {
-        width: 50%;
         vertical-align: middle;
     }
     .numberHeading {
@@ -639,7 +636,20 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         padding: 10px 10px;
     }
 }
+@media (min-width: 600px) and (max-width: 939px) {
+    .numbers {
+        width: 50%;
+        padding: 0;
+    }
+}
 @media (min-width: 400px) and (max-width: 599px) {
+    .numbers .circle, .numbers h5 {
+        width: 50%;
+    }
+    .numbers {
+        width: 100%;
+        padding: 0;
+    }
     .lineOne {
         font-size: 6rem;
     }
