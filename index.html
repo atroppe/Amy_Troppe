@@ -2,7 +2,7 @@
 
 <head>
     <title>Amy Troppe Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/typeplate.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
@@ -12,9 +12,6 @@
 
 <body>
     <div class="homepage cameleon">
-        <div id="pop">
-            <ul></ul>
-        </div>
         <div class="grid header">
             <div class="cell logo">
                 <div class="name">
@@ -45,32 +42,27 @@
                 </ul>
             </nav>
         </div>
-        <div class="grid main">
-            <div class="cell left">
-                <div class="goal">
-                    <p>Aspiring:</p>
-                    <ul>
-                        <li>Designer</li>
-                        <li>Full-stack developer</li>
-                        <li>UX aficionado</li>
-                    </ul>
+        <div class="wrapper">
+            <div class="grid main">
+                <div class="cell left">
+                    <div class="goal">
+                        <p>Aspiring:</p>
+                        <ul>
+                            <li>Designer</li>
+                            <li>Full-stack developer</li>
+                            <li>UX aficionado</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="cell right">
-                <h1 class="lineOne">DESIGN</h1>
-                <div class="bigLine"></div>
-
+                <div class="cell right">
+                    <h1 class="lineOne">DESIGN</h1>
+                    <div class="bigLine"></div>
+                </div>
             </div>
         </div>
-        <!--  <div class="more">
-            <h4>My development work is often driven by the visual end goal and interactive experience that the application becomes.</h4>
-            <div class="grid">
-                <p class="cell">Starting out with a really good idea and strong direction from a design team is what provides me with the most inspiration to work together until it is completed. My long term goal is to be able to work on the entire application from front to back, continuing to improve on the quality of user experience, interactivity, and optimization. I plan to reach that goal by contributing my abilities of visualization and foresight as a developer to a team, while learning new technologies.</p>
-                <div class="cell AT">
-                    <div class="leaf"></div>
-                </div>
-            </div>
-        </div> -->
+        <div class="arrow cell">
+            <i class="fa fa-angle-down"></i>
+        </div>
     </div>
 
     <div class="page2 grid">
@@ -206,7 +198,8 @@
         </div>
         <div class="projects grid">
             <div class="desktopContainer cell">
-                <div class="menuScreens"></div>
+                                <div class="menuScreens"></div>
+<!--                 <img class="menuImage" src="./images/menu-screen.png"> -->
             </div>
 
             <div class="intro cell">
@@ -220,7 +213,7 @@
             </div>
         </div>
 
-      <!--   <div class="grid projects">
+        <!--   <div class="grid projects">
             <div class="intro cell">
                 <h6>Brighton Home for Sale</h6>
                 <h7>Technologies: Responsive HTML/CSS</h7>

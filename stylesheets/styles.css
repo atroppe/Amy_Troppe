@@ -28,10 +28,25 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(http://cl.ly/image/3P3y3m462o3f/vibrant%20colors.jpg);
+    background-image: url(../images/vibrant-colors.jpg);
     background-repeat: repeat;
     background-size: 100% auto;
-    min-width: 400px;
+}
+body, html {
+    min-width: 300px;
+}
+.wrapper {
+    max-width: 1280px;
+    padding: 10% 6%;
+    margin: 0 auto;
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 3em;
+    transform: translateX(-50%);
 }
 .homepage {
     color: white;
@@ -43,6 +58,8 @@ body {
     
     min-height: 100vh;
     overflow: auto;
+    /*    margin: 0 auto;
+    text-align: center;*/
 }
 .header {
     padding: 60px 60px 0px 60px;
@@ -145,7 +162,7 @@ h3 {
     letter-spacing: 4px;
 }
 .main {
-    padding: 80px 80px;
+    /*    padding: 10% 6%;*/
 }
 .right p {
     color: white;
@@ -280,13 +297,14 @@ h4 {
     
     margin: 0;
     position: relative;
+    font-size: 16px;
 }
 .bar h4 {
     color: white;
     text-align: center;
-    padding: 40px;
-    font-size: 2rem;
-    font-family: 'Cabin', serif;
+    padding: 2em;
+    font-size: 2em;
+    font-family: 'Cabin', sans-serif;
 }
 .my-icon {
     position: absolute;
@@ -324,9 +342,6 @@ h4 {
     
     text-align: left;
 }
-.intro, .desktopContainer {
-    width: 45%;
-}
 .intro h6 {
     color: #1C1241;
     font-size: 1.5rem;
@@ -346,39 +361,62 @@ h4 {
 .projects {
     padding: 50px;
 }
-.desktop {
+/*.desktop {
     text-align: center;
     border-radius: 25px;
     box-shadow: 4px 4px 14px #000;
     background-color: darkgrey;
     padding: 20px;
-}
-.screenshot {
+}*/
+/*.screenshot {
     width: 100%;
 }
 .imgContainer {
     height: 300px;
     overflow: auto;
+}*/
+
+.intro, .desktopContainer {
+    width: 45%;
+    overflow: auto;
 }
+.desktopContainer {
+    text-align: center;
+    /*    height: 500px;*/
+}
+/*.menuImage {
+    width: 777px;
+    height: 610px;
+    max-width: 100%;
+    height: auto;
+}*/
+
 .menuScreens {
-    background-image: url(http://cl.ly/image/201v2C1I203J/computersNmenu3.png);
-    background-size: 100% auto;
+    background-image: url('../images/menu-screen.png');
+    background-size: 90% auto;
     background-position: center;
-    height: 458px;
+    /*    width: 777px;*/
+    
+    width: 100%;
+    height: 610px;
     background-repeat: no-repeat;
 }
-.houseScreens {
+/*.houseScreens {
     background-image: url(http://cl.ly/image/3V1p0o0g2h0G/computersNhouse.png);
     background-size: 100% auto;
     background-position: center;
     height: 358px;
     background-repeat: no-repeat;
-}
+}*/
+
 .etsyScreens {
     background-image: url("../images/etsy-macbook.png");
     background-size: 100% auto;
     background-position: center;
-    height: 358px;
+    /*    width: 799px;*/
+    
+    width: 100%;
+    height: 453px;
     background-repeat: no-repeat;
 }
 .codeLinks {
@@ -563,7 +601,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 }
 /**************************************************/
 
-@media (min-width: 400px) and (max-width: 939px) {
+@media (min-width: 300px) and (max-width: 939px) {
     nav {
         position: absolute;
         top: 10px;
@@ -593,6 +631,9 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     .left, .smallLine, .numbers h4 {
         display: none;
     }
+    .right {
+        width: 100%;
+    }
     .header, .main, .homepage .logo, .resumeHeader, .resumeHeader .logo {
         text-align: center;
     }
@@ -606,13 +647,10 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         text-align: center;
     }
     .desktopContainer, .intro {
-        width: 80%;
+        width: 100%;
     }
     .projects {
         padding: 50px;
-    }
-    .desktopContainer {
-        /*        padding: 50px;*/
     }
     .me, .contactInfo {
         width: 100%;
@@ -641,10 +679,17 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
         width: 50%;
         padding: 0;
     }
+    .bigLine {
+        width: 148px;
+        height: 15px;
+    }
 }
-@media (min-width: 400px) and (max-width: 599px) {
-    .numbers .circle, .numbers h5 {
-        width: 50%;
+@media (max-width: 599px) {
+    .numbers .circle {
+        width: 25%;
+    }
+    .numbers h5 {
+        width: 75%;
     }
     .numbers {
         width: 100%;
@@ -679,9 +724,13 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     .projects {
         padding: 20px;
     }
-    .bar p {
+    /*   .bar h4 {
         padding: 20px;
         font-size: 1.5rem;
+    }*/
+    
+    .bar {
+        font-size: 10px;
     }
     .my-icon {
         display: none;
@@ -691,5 +740,30 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     }
     .lineOne {
         font-size: 2rem;
+    }
+    .bigLine {
+        width: 148px;
+        height: 15px;
+    }
+    .home, .work, .contact {
+        display: none;
+    }
+    .header {
+        padding: 20% 0%;
+        /*        text-align: center;*/
+    }
+    .menuScreens, .etsyscreens {
+        height: 400px;
+    }
+}
+@media (max-width: 440px) {
+    .numbers .circle, .numbers h5 {
+        width: 100%;
+    }
+    .intro {
+        text-align: center;
+    }
+        .menuScreens, .etsyscreens {
+        height: 300px;
     }
 }
