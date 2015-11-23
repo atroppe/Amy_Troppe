@@ -3,7 +3,7 @@ window.onload = app;
 function app() {
     console.log("app is working");
 
-    $('.cameleon').css("backgroundColor", '#3544A4');
+    //$('.cameleon').css("backgroundColor", '#3544A4');
     // $('.lineOne').fadeOut(750, function() {
     //     $(this).html('vision').fadeIn(750);
     // });
@@ -69,7 +69,7 @@ function app() {
 
     function reset() {
         return function() {
-            cameleon.style.backgroundColor = "transparent";
+            cameleon.style.backgroundColor = "rgba(53,68,164,0.8)";
             $('.lineOne').fadeOut(750, function() {
                 $(this).html('design').fadeIn(750);
             });
