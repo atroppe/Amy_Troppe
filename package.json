@@ -1,7 +1,7 @@
 {
-  "name": "NodeServerRocks",
+  "name": "amyTroppePortfolio",
   "version": "0.0.0",
-  "description": "derp WAT",
+  "description": "Portfolio",
   "main": "server.js",
   "dependencies": {
     "express": "^4.6.1",
@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atroppe/Amy_Troppe.git"
+    "url": "git+https://github.com/atroppe/Amy_Troppe.git"
   },
-  "author": "",
+  "author": "Amy Troppe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/atroppe/Amy_Troppe/issues"
